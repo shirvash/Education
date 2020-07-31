@@ -1,6 +1,8 @@
 import asyncore
 import socket
 
+'''Эхо сервер  для 10 пользователей одновременно'''
+
 class EchoHandler(asyncore.dispatcher_with_send):
         def handle_read(self):
                 data = self.recv(1024)

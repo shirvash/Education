@@ -1,6 +1,8 @@
 import asyncore
 import socket
 
+'''Второй вариант эхосервера'''
+
 class EchoHandler(asyncore.dispatcher_with_send):
         def handle_read(self):
                 data = self.recv(1024)
